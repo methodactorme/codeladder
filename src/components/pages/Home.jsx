@@ -77,14 +77,14 @@ export const Home = () => {
             </div>
 
             <h1 className="section-header animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              Master Coding with
+              Get use to
               <span className="text-gradient block mt-2">
                 CodeLadder
               </span>
             </h1>
 
             <p className="section-subheader mb-12 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              Join thousands of developers using our AI-powered platform to accelerate their coding journey.
+              Join thousands of competitive programmers using our  platform to collab and share your insights 
               <span className="font-semibold text-gray-900"> Practice smarter, collaborate better, achieve more.</span>
             </p>
 
