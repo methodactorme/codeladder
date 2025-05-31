@@ -125,12 +125,9 @@ export const Home = () => {
       Whether you're studying solo or with a team, this tool helps you organize, share, and solve more efficiently.
     </p>
     <div className="bg-yellow-50 border border-yellow-200 rounded-lg px-6 py-4 text-yellow-800 mb-4">
-      ⚠️ <strong>Please note:</strong> Some operations might take a couple of seconds to respond. We recommend waiting 1–2 seconds before attempting another update.
+       <strong>Please note:</strong> Some operations might take a couple of seconds to respond. We recommend waiting 1–2 seconds before attempting another update.
     </div>
-    <div className="bg-red-50 border border-red-200 rounded-lg px-6 py-4 text-red-800">
-      🔁 <strong>If refreshing the page doesn't work</strong>, it's likely due to a known render hosting issue. 
-      To continue using the site, please return to the homepage at <a className="underline font-semibold" href="https://frontendcodeladder.onrender.com/" target="_blank" rel="noopener noreferrer">https://frontendcodeladder.onrender.com/</a>.
-    </div>
+    
     <p className="text-gray-500 mt-6">
       For any bugs, issues, or suggestions, feel free to reach out at <a className="underline" href="mailto:methodactorme@gmail.com">methodactorme@gmail.com</a>.
     </p>
