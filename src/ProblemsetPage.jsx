@@ -18,12 +18,12 @@ const ProblemsetPage = () => {
 
         const problems = json.result.problems.map(p => ({
           contestId: p.contestId,
-          contestName: undefined, // will be set via contest.json in ContestTable
+          contestName: undefined, 
           problemIndex: p.index,
           problemName: p.name,
           problemLink: `https://codeforces.com/contest/${p.contestId}/problem/${p.index}`,
           rating: p.rating || null,
-          userStatus: 'NOT_ATTEMPTED', // Static for now
+          userStatus: 'NOT_ATTEMPTED', 
         }));
 
         setTableData(problems);
