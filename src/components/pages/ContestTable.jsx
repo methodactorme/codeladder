@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 
 // Rating color (Codeforces style)
 const getColorByRating = (rating) => {
-  if (rating == null) return "#000000"; // Unrated (black or default dark gray)
+  if (rating == null) return "#000000"; 
 
   if (rating >= 3000) return "#ff0000";       // Legendary Grandmaster (gradient red)
   if (rating >= 2600) return "#ff0000";       // International Grandmaster
