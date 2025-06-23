@@ -11,6 +11,7 @@ import Ladders from './components/pages/Ladders';
 import LadderPage from './components/pages/LadderPage';
 
 import Admin from './components/pages/Admin';
+import ProblemsetPage from './ProblemsetPage';
 
 const App = () => {
   const [user, setUser] = useState("");
@@ -23,6 +24,9 @@ const App = () => {
   }, []);
 
   return (
+    <>
+   
+    
     <div className="min-h-screen">
       <Navbar user={user} setUser={setUser} />
       <div className="pt-20">
@@ -33,9 +37,11 @@ const App = () => {
           <Route path="/ladders" element={<Ladders />} />
           <Route path="/ladder/:tableId" element={<LadderPage />} />
           <Route path='/admin' element={<Admin />} />
+          <Route path='/contest' element = {<ProblemsetPage></ProblemsetPage>} />
         </Routes>
       </div>
     </div>
+    </>
   );
 };
 
