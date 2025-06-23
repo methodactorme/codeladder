@@ -2,16 +2,20 @@ import React, { useState, useMemo } from 'react';
 
 // Rating color (Codeforces style)
 const getColorByRating = (rating) => {
-  if (rating == null) return "#374151";
-  if (rating >= 2400) return "#ff8c00";
-  if (rating >= 2100) return "#aa00aa";
-  if (rating >= 1900) return "#0000ff";
-  if (rating >= 1600) return "#03a89e";
-  if (rating >= 1400) return "#008000";
-  if (rating >= 1200) return "#808000";
-  if (rating >= 800)  return "#000000";
-  return "#888888";
+  if (rating == null) return "#000000"; // unrated (black or default dark gray)
+
+  if (rating >= 3000) return "#ff0000";       // Legendary Grandmaster (usually gradient, simplified here)
+  if (rating >= 2600) return "#ff0000";       // IGMs use the same red
+  if (rating >= 2400) return "#ff8c00";       // GM - orange
+  if (rating >= 2300) return "#aa00aa";       // IM - purple
+  if (rating >= 2100) return "#aa00aa";       // Master - purple
+  if (rating >= 1900) return "#0000ff";       // Candidate Master - blue
+  if (rating >= 1600) return "#03a89e";       // Expert - cyan
+  if (rating >= 1400) return "#008000";       // Specialist - green
+  if (rating >= 1200) return "#808000";       // Pupil - olive
+  return "#808080";                           // Newbie - gray
 };
+
 
 const getStatusDot = (status) => {
   if (status === "SOLVED") {
