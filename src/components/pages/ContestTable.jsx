@@ -2,17 +2,17 @@ import React, { useState, useMemo } from 'react';
 
 // Rating color (Codeforces style)
 const getColorByRating = (rating) => {
-  if (rating == null) return "#000000"; // unrated (black or default dark gray)
+  if (rating == null) return "#000000"; // Unrated (black or default dark gray)
 
-  if (rating >= 3000) return "#ff0000";       // Legendary Grandmaster (usually gradient, simplified here)
-  if (rating >= 2600) return "#ff0000";       // IGMs use the same red
-  if (rating >= 2400) return "#ff8c00";       // GM - orange
-  if (rating >= 2300) return "#aa00aa";       // IM - purple
+  if (rating >= 3000) return "#ff0000";       // Legendary Grandmaster (gradient red)
+  if (rating >= 2600) return "#ff0000";       // International Grandmaster
+  if (rating >= 2400) return "#ff8c00";       // Grandmaster - orange
+  if (rating >= 2300) return "#aa00aa";       // International Master - purple
   if (rating >= 2100) return "#aa00aa";       // Master - purple
-  if (rating >= 1900) return "#0000ff";       // Candidate Master - blue
-  if (rating >= 1600) return "#03a89e";       // Expert - cyan
-  if (rating >= 1400) return "#008000";       // Specialist - green
-  if (rating >= 1200) return "#808000";       // Pupil - olive
+  if (rating >= 1900) return "#a0a";          // Candidate Master - violet
+  if (rating >= 1600) return "#0000ff";       // Expert - blue
+  if (rating >= 1400) return "#03a89e";       // Specialist - cyan
+  if (rating >= 1200) return "#008000";       // Pupil - green
   return "#808080";                           // Newbie - gray
 };
 
